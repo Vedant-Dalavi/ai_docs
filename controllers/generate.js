@@ -1,9 +1,9 @@
 const History = require("../models/history.model")
 const fs = require("fs")
-
+require("dotenv").config()
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI("AIzaSyAZJzF2IDCvYK_amIZmVGx-TwAS7nFr92o");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 
