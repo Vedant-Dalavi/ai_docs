@@ -10,6 +10,7 @@ import SignUp from './pages/Signup';
 import OpenRoute from './components/core/OpenRoute';
 import PrivateRoute from './components/core/PrivateRoute';
 import ViewDocument from './components/ViewDocument';
+import Home from './pages/Home';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
 
       <TranslationProvider>
         <Routes>
-
+          <Route path='/' element={<Home />} />
           <Route path='/login'
             element={
               <OpenRoute>
@@ -36,7 +37,7 @@ function App() {
             } />
 
           <Route path="/translation" element={<Translation />} />
-          <Route path='/'
+          <Route path='/dashboard'
             element={
               <PrivateRoute>
                 <Dashboard />

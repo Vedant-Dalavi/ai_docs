@@ -14,7 +14,7 @@ function ViewDocument() {
             <div className="bg-black text-white w-full max-w-4xl p-4 rounded-xl flex justify-between items-center">
                 <h1 className="text-lg font-bold text-white">AI-Powered Legal Documentation Assistant</h1>
                 <div className="space-x-2">
-                    <Link to={'/'} className="bg-red-500 px-4 py-2 rounded text-white">Dashboard</Link>
+                    <Link to={'/dashboard'} className="bg-red-500 px-4 py-2 rounded text-white">Dashboard</Link>
 
                     <Link to={'/profile'} className="bg-red-500 px-4 py-2 rounded text-white">Profile</Link>
                     <Btn />

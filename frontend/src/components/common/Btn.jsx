@@ -9,7 +9,8 @@ function Btn() {
         e.preventDefault();
 
         localStorage.removeItem("user");
-        navigate("/login")
+        localStorage.removeItem("history");
+        navigate("/")
     }
     return (
         <button onClick={clickHandler} className="bg-red-500 px-2 py-1 rounded text-white">Logout</button>
